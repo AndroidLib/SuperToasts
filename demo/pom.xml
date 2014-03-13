@@ -35,12 +35,22 @@
         </dependency>
 
         <dependency>
-            <groupId>com.actionbarsherlock</groupId>
-            <artifactId>actionbarsherlock</artifactId>
-            <version>4.4.0</version>
+            <groupId>android.support</groupId>
+            <artifactId>compatibility-v4</artifactId>
+            <version>${android-support.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>android.support</groupId>
+            <artifactId>compatibility-v7-appcompat</artifactId>
+            <version>${android-support.version}</version>
             <type>apklib</type>
         </dependency>
-
+        <dependency>
+            <groupId>android.support</groupId>
+            <artifactId>compatibility-v7-appcompat</artifactId>
+            <version>${android-support.version}</version>
+            <type>jar</type>
+        </dependency>
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>

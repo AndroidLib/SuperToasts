@@ -4,7 +4,7 @@
         Base application theme, dependent on API level. This theme is replaced
         by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
     -->
-    <style name="AppTheme" parent="Theme.Sherlock.Light.DarkActionBar">
+    <style name="AppTheme" parent="Theme.AppCompat">
         <item name="actionBarStyle">@style/ActionBar</item>
     </style>
 

@@ -2,17 +2,17 @@ package com.supertoastsdemo;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.Spinner;
-import com.actionbarsherlock.app.SherlockFragment;
 import com.github.johnpersano.supertoasts.SuperToast;
 
 
-public class FragmentSuperToast extends SherlockFragment {
+public class FragmentSuperToast extends Fragment {
 
     Spinner mAnimationSpinner;
     Spinner mDurationSpinner;

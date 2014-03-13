@@ -5,6 +5,7 @@ import android.graphics.Color;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.Parcelable;
+import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,14 +13,13 @@ import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.RadioGroup;
 import android.widget.Spinner;
-import com.actionbarsherlock.app.SherlockFragment;
 import com.github.johnpersano.supertoasts.SuperCardToast;
 import com.github.johnpersano.supertoasts.SuperToast;
 import com.github.johnpersano.supertoasts.util.OnClickWrapper;
 import com.github.johnpersano.supertoasts.util.OnDismissWrapper;
 import com.github.johnpersano.supertoasts.util.Wrappers;
 
-public class FragmentSuperCardToast extends SherlockFragment {
+public class FragmentSuperCardToast extends Fragment {
 
     Spinner mAnimationSpinner;
     Spinner mDurationSpinner;

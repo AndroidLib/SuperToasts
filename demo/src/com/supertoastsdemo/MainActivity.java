@@ -3,17 +3,16 @@ package com.supertoastsdemo;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
+import android.support.v7.app.ActionBar;
+import android.support.v7.app.ActionBarActivity;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.widget.ArrayAdapter;
-import com.actionbarsherlock.app.ActionBar;
-import com.actionbarsherlock.app.SherlockFragment;
-import com.actionbarsherlock.app.SherlockFragmentActivity;
-import com.actionbarsherlock.view.Menu;
-import com.actionbarsherlock.view.MenuInflater;
-import com.actionbarsherlock.view.MenuItem;
 
-
-public class MainActivity extends SherlockFragmentActivity {
+public class MainActivity extends ActionBarActivity {
 
     private static final String NAVIGAION_SELECTION = "navigationSelection";
 
@@ -33,7 +32,7 @@ public class MainActivity extends SherlockFragmentActivity {
 
         actionBar.setListNavigationCallbacks(arrayAdapter, new ActionBar.OnNavigationListener() {
 
-            SherlockFragment fragment;
+            Fragment fragment;
 
             @Override
             public boolean onNavigationItemSelected(int itemPosition, long itemId) {
@@ -91,7 +90,7 @@ public class MainActivity extends SherlockFragmentActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
 
-        MenuInflater inflater = getSupportMenuInflater();
+        MenuInflater inflater = getMenuInflater();
         inflater.inflate(R.menu.main, menu);
 
         return true;
