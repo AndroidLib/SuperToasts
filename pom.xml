@@ -31,7 +31,9 @@
 
         <java.version>1.6</java.version>
         <android.version>4.1.1.4</android.version>
-        <android.platform>17</android.platform>
+        <android.platform>19</android.platform>
+        <android-platform.version>4.4.2_r3</android-platform.version>
+        <android-support.version>19.1.0</android-support.version>
 
         <fest-assert.version>1.0.7</fest-assert.version>
         <robolectric.version>2.2</robolectric.version>
